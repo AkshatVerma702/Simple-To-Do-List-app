@@ -1,0 +1,115 @@
+/*--text: #080707;
+--background: #fafafa;
+--primary-button: #81c1b2;
+--secondary-button: #eae9e6;
+--accent: #6fb8a7;
+*/
+* {
+    font-family: Arial, sans-serif;
+    color: #080707;
+    
+  }
+  
+  body {
+    background-color: #ddcffc;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .title {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    color: #6fb8a7;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .frame {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .frame h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .add-task {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .add-task input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-task button {
+    padding: 5px 10px;
+    background-color: #81c1b2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .task-list {
+    margin-top: 15px;
+  }
+  
+  .task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .task input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .task span {
+    flex: 1;
+  }
+  
+  .completed-task {
+    margin-top: 10px;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    margin-top: 10px;
+  }
+  
+  @keyframes text-fade {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0; }
+  }
+  
+  .msg-1 {
+    color: green;
+    animation: text-fade 2s forwards;
+  }
+  
+  @media (max-width: 454px){
+    .frame{
+        width: 70%;
+        height: 20%;
+    }
+    
+  }
